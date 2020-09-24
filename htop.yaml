@@ -1,0 +1,4 @@
+version_control: github
+src_repo: htop-dev/htop
+tag_prefix:
+separator: .

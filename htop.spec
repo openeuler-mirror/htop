@@ -1,12 +1,12 @@
 Name:		htop
 Version:	3.0.2
-Release:	1
+Release:	2
 Summary:	htop - an interactive process viewer
 License:	GPLv2
 URL:		https://htop.dev
 Source0:	https://github.com/htop-dev/htop/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
-BuildRequires: perl perl-PathTools ncurses-devel
+BuildRequires: perl perl-PathTools ncurses-devel autoconf automake gcc
 
 %description
 htop is a cross-platform interactive process viewer.
@@ -33,5 +33,9 @@ Tasks related to processes (e.g. killing and renicing) can be done without enter
 %{_mandir}/man1/%{name}.1.gz
 
 %changelog
+* Mon Jun 7 2021 baizhonggui <baizhonggui@huawei.com> - 3.0.2-2
+- Fix building error: ./autogen.sh: line 3: autoreconf: command not found
+- Add autoconf/automake/gcc in BuildRequires
+
 * Thu Sep 24 2020 Zhipeng Xie <xiezhipeng1@huawei.com> - 3.0.2-1
 - Package init

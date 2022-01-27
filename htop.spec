@@ -1,6 +1,6 @@
 Name:		htop
-Version:	3.0.2
-Release:	2
+Version:	3.1.2
+Release:	1
 Summary:	htop - an interactive process viewer
 License:	GPLv2
 URL:		https://htop.dev
@@ -28,11 +28,15 @@ Tasks related to processes (e.g. killing and renicing) can be done without enter
 %files
 %license COPYING
 %{_bindir}/%{name}
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %{_mandir}/man1/%{name}.1.gz
 
 %changelog
+* Wed Jan 19 2022 SimpleUpdate Robot <tc@openeuler.org> - 3.1.2-1
+- Upgrade to version 3.1.2
+
 * Mon Jun 7 2021 baizhonggui <baizhonggui@huawei.com> - 3.0.2-2
 - Fix building error: ./autogen.sh: line 3: autoreconf: command not found
 - Add autoconf/automake/gcc in BuildRequires

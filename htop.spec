@@ -1,5 +1,5 @@
 Name:		htop
-Version:	3.1.2
+Version:	3.2.1
 Release:	1
 Summary:	htop - an interactive process viewer
 License:	GPLv2
@@ -34,6 +34,9 @@ Tasks related to processes (e.g. killing and renicing) can be done without enter
 %{_mandir}/man1/%{name}.1.gz
 
 %changelog
+* Jun Sun 12 2022 YukariChiba <i@0x7f.cc> - 3.2.1-1
+- Upgrade version to 3.2.1
+
 * Mon Apr 25 2022 wangkai <wangkai@h-partners.com> - 3.1.2-1
 - Update version to 3.1.2
 
